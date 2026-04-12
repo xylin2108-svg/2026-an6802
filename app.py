@@ -24,4 +24,4 @@ def wrong():
     return (render_template('wrong.html') )
 
 if __name__ == '__main__':
-    app.run()
+    app.run() 
