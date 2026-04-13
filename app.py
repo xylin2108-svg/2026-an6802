@@ -3,7 +3,8 @@ import joblib
 import os
 from groq import Groq
 
-os.environ["GROQ_API_KEY"]="REMOVED"
+# os.environ["GROQ_API_KEY"]="REMOVED"
+client = Groq(api_key=os.getenv("GROQ_API_KEY"))
 
 model=joblib.load("foodexp.pkl")
 
